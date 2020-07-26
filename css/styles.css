@@ -1,0 +1,134 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100vh;
+  font-family: serif;
+  background-color: #EF866C;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #fff;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+body > img{
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+body > img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+.cover-container{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.color-band{
+  background-color: #EF866C;
+  min-height: 1.5rem;
+}
+
+#nav-01,#nav-02,#nav-03,#nav-04{
+  cursor: pointer;
+  font-size: 1.3rem;
+  text-decoration: line-through;
+}
+
+#nav-01:hover,#nav-02:hover,#nav-03:hover,#nav-04:hover{
+  text-decoration: none;
+}
+
+nav .active{
+  text-decoration: none !important;
+}
+
+/*
+ * Main
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+#inner-img-container{
+  position: relative;
+  max-width: 30rem;
+}
+#inner-img-container > img{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+#inner-img-container > img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+
+/*
+ * Footer
+ */
+ footer > .color-band{
+  text-align: center;
+  color: #FFD3B9;
+  font-size: .85em;
+ }
+
+ footer > .color-band a{
+  color:#FFD3B9;
+ }
+
+ footer > .color-band a:hover{
+  color:#FFFFEB;
+ }
