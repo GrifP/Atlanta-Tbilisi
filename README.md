@@ -1,3 +1,2 @@
-# Atlanta-Tbilisi
-From Atlanta to Tbilisi Official >
+# from atlanta to tbilisi
 [https://atlantatotbilisi.com](atlantatotbilisi.com)
